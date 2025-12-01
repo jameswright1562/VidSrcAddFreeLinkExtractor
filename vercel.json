@@ -1,0 +1,23 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "api/embed.js",
+      "use": "@vercel/node"
+    },
+    {
+      "src": "api/index.js",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/embed",
+      "dest": "/api/embed.js"
+    },
+    {
+      "src": "/",
+      "dest": "/api/index.js"
+    }
+  ]
+}
