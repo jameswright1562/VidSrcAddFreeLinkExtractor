@@ -4,7 +4,7 @@ const cheerio = require("cheerio");
 module.exports = async (req, res) => {
   const { url } = req.query;
 
-  if (!url || !url.startsWith("https://vidsrc.in/embed/")) {
+  if (!url || !url.startsWith("https://vidsrc.to/embed/")) {
     return res.status(400).send("Invalid or missing URL");
   }
 
